@@ -1,2 +1,2 @@
 # Final_Project
- a study as to what extent basic machine learning algorithms can predict future stock prices
+ a study exploring the extent to which basic machine learning algorithms can predict future stock prices
