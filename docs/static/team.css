@@ -1,0 +1,61 @@
+html,
+body,
+#map-id {
+  
+  height: 100%;
+  padding: 7px;
+  margin: 10px;
+}
+
+
+
+body {
+  background-color:  #918f8f;
+  
+
+}
+
+img.float-left {
+  width: 50%
+}
+
+img.about {
+  width: 20%
+}
+
+img.source {
+  width: 10%;
+}
+
+
+.navigation .navbar-brand{
+  background-color: black;
+  color: white; 
+  margin-left: 30px; 
+  padding: inherit; 
+  font-weight: bold; 
+  background-color: #0BADA6;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #0BADA6 on hover */
+li a:hover {
+  border-color:#0BADA6;
+  border-style: solid; 
+}
+
+.nav-link {
+  margin-left: 30px; 
+  padding: inherit; 
+  font-weight: bold; 
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
