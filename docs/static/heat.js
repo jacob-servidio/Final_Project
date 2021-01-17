@@ -1,0 +1,87 @@
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	title:{
+		text: "Olympic Medals and Average Temperature"
+	},
+	axisX: {
+		title:"Temperature (Celcius)"
+	},
+	axisY: {
+		title:"Total Medals",
+		includeZero: true
+	},
+	legend:{
+		horizontalAlign: "left"
+	},
+	data: [{
+		type: "bubble",
+		showInLegend: true,
+		legendText: "Size of Bubble Represents Total Medals",
+		legendMarkerType: "circle",
+		legendMarkerColor: "grey",
+		toolTipContent: "<b>{name}</b><br/>Temperature: {x}<br/>Total Medals: {y}<br/> Gold: {m}<br/>Silver: {s}<br/> Bronze {z}",
+		dataPoints: [
+			{ m: 0, x: 14.504, y: 2, z: 2, s: 0, name: "Afghanistan"},
+			{ m: 5, x: 22.99, y: 15, z:8, s: 2, name: "Algeria"},
+			{ m: 20, x: 14.474, y: 29, s: 4, z:5, name: "Australia" },
+			{ x: 14.62, m: 70, s: 91, y: 252, z: 91, name: "Argentina" },
+			{ x: 8.55, y: 12, z: 9, s: 2, m: 1, name: "Armenia" },
+			{ x: 13.47, y: 1235, z: 491, m: 325, s: 419, name: "Austria" },
+			{ x: 11.17, y: 26, z: 15, m: 6, s: 5, name: "Azerbaijan" },
+			{ x: 25.12, y: 33, z: 10, s: 11, m: 13, name: "Bahamas" },
+			{ x: 26.46, y: 1, z:1, m: 0, s: 0, name: "Barbados" },
+			{ x: 9.48, y: 447, z:171, s: 180, m: 96, name: "Belgium" },
+			{ x: 23.5, y: 1, z: 1, s: 0, m: 0, name: "Bermuda" },
+			{ x: 5.82, y: 121, z:63, m: 18, s: 40, name: "Belarus" },
+			{ x: 19.91, y: 425, z: 185, s: 167, m:73, name: "Brazil" },
+			{ x: 25.93, y: 1, z: 1, s: 0, m: 0, name: "Bahrain" },
+			{ x: 10.48, y: 335, z: 138, s: 143, m: 54, name: "Bulgaria" },
+			{ x: 6.21, y: 1197, z: 385, s: 412, m: 400, name: "Canada" },
+			{ x: 5.88, y: 32, z: 20, s: 9, m: 3, name: "Chile" },
+			{ x: 21.80, y: 864, z: 250, s: 313, m: 301, name: "China" },
+			{ x: 24.35, y: 22, z: 1, s: 1, m:20, name: "Cameroon" },
+			{ x: 21.97, y: 20, z: 11, s: 7, m:2, name: "Colombia" },
+            { x: 25.62, y: 4, z: 2, s: 1, m:1, name: "Costa Rica" },
+            { x: 25.62, y: 4, z: 2, s: 1, m:1, name: "Costa Rica" },
+            { x: 11.34, y: 124, z: 35, s: 38, m: 51, name: "Croatia" },
+            { x: 25.41, y: 407, z: 112, s: 127, m:159, name: "Cuba" },
+            { x: 7.62, y: 118, z: 52, s: 27, m: 39, name: "Czech Republic" },
+            { x: 7.83, y: 556, z: 161, s: 231, m: 164, name: "Denmark" },
+            { x: 28.82, y: 1, z: 1, s: 0, m:0, name: "Djibouti" },
+            { x: 26.18, y: 6, z: 1, s: 2, m:3, name: "Dominican Republic" },
+            { x: 21.51, y: 24, z: 9, s: 8, m: 7, name: "Egypt"},
+            { x: 26.80, y: 1, z: 1, s: 0, m: 0, name: "Eritrea"},
+            { x: 11.68, y: 444, z: 119, s: 224, m:101, name: "Spain" },
+            { x: 4.82, y: 46, z: 21, s: 12, m: 13, name: "Estonia" },
+            { x: 17.59, y: 45, z: 17, s: 7, m:21, name: "Ethiopia" },
+            { x: 4.36, y:279, z: 81, s: 71, m: 127, name: "Russia" },
+            { x: 1.24, y: 866, z: 407, s: 263, m: 196, name: "Finland" },
+            { x: 10.67, y: 1663, z: 635, s: 551, m:477, name: "France" },
+            { x: 9.22, y: 3011, z: 1184, s: 590, m:1237, name: "Germany" },
+            { x: 8.49, y: 1913, z: 620, s: 680, m: 613, name: "UK"},
+            { x: 8.11, y: 25, z: 14, s: 5, m:6, name: "Georgia" },
+            { x: 26.71, y: 23, z: 22, s: 1, m: 0, name: "Ghana" },
+            { x: 14.77, y: 248, z: 81, s: 108, m:59, name: "Greece" },
+            { x: 25.93, y: 1, z: 1, s: 0, m:0, name: "Guyana" },
+            { x: 26.3, y: 7, z: 5, s: 1, m: 1, name: "Haiti" },
+            { x: 9.72, y: 1113, z: 364, s: 329, m:420, name: "Hungary" },
+            { x: 26.93, y:37, z: 13, s: 15, m:9, name: "Indonesia" },
+            { x: 25.11, y: 165, z: 39, s: 18, m: 138, name: "India"},
+            { x: 12.79, y: 60, z: 25, s: 20, m: 15, name: "Iran"},
+            { x: 9.42, y: 32, z: 13, s: 10, m:9, name: "Ireland" },
+            { x: 22.87, y: 1, z: 1, s: 0, m: 0, name: "Iraq" },
+            { x: 1.4, y: 17, z: 2, s: 15, m:0, name: "Iceland" },
+            { x: 19.62, y: 7, z: 5, s: 1, m: 1, name: "Israel" },
+            { x: 12.22, y: 1551, z: 495, s: 489, m: 567, name: "Italy" },
+			{ x: 26.1, y: 127, z: 42, s: 58, m:27, name: "Jamaica" },
+			{ x: 14.93, y: 838, z: 317, s: 292, m:229, name: "Japan" },
+            { x: 5.2, y: 58, z: 21, s: 20, m: 17, name: "Kazakhstan"},
+            { x: 16.17, y: 93, z: 30, s: 35, m: 28, name: "Kenya"},
+            { x: 5.2, y: 3, z: 2, s: 1, m: 0, name: "Italy" },
+			{ x: 10.9, y: 498, z: 173, s: 224, m:201, name: "South Korea" },
+            { x: 27.82, y: 6, z: 5, s: 1, m:0, name: "Saudi Arabia" },
+            { x: 8.6, y: 5309, z: 1263, s: 1557, m:2489, name: "USA" }
+		]
+	}]
+});
+chart.render();
