@@ -1,10 +1,10 @@
 anychart.onDocumentReady(function () {
 
   // load data
-  anychart.data.loadCsvFile("data.json", function (data) {
+  anychart.data.loadCsvFile("candle.csv", function (data) {
 
     // create a data table
-    var dataTable = anychart.data.table(0, 'MMM d, yyyy');
+    var dataTable = anychart.data.table(0, 'yyyy-mm-dd');
     dataTable.addData(data);
 
     // map data
@@ -15,13 +15,13 @@ anychart.onDocumentReady(function () {
 
     // set the series
     var series = chart.plot(0).candlestick(mapping);
-    series.name("EUR USD Trade Data");
+    series.name("FDX");
 
     // set the chart title
-    chart.title("EUR USD Historical Trade Data");
+    chart.title("Stock Over Time");
 
     // set the container id
-    chart.container('container');
+    chart.container('candle');
 
     // draw the chart
     chart.draw();
