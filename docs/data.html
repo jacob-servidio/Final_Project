@@ -4,7 +4,7 @@
 <head>
 
   <meta charset="UTF-8">
-  <title>Olympic Medals Analysis</title>
+  <title>Stock Analysis</title>
 
   <!-- bootstrap stylesheet -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -23,7 +23,7 @@
     <!--Navigation bar-->
     <div class="navigation">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="home.html">Stock Predict Analysis</a>
+        <a class="navbar-brand" href="home.html" style="color:goldenrod">Stock Predict Analysis</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -37,25 +37,26 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Link</a>
           </li>-->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Plots
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="heat.html">Bubble Map</a>
-                <a class="dropdown-item" href="hover.html">Static Hover Map</a>
-                <!-- <div class="dropdown-divider"></div>-->
-                <a class="dropdown-item" href="bars.html">Bars with Selector</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="team.html">Team</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="data.html">Data</a>
-            </li>
-          </ul>
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false" style="color:goldenrod">
+              Calculation Pages
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              
+              <a class="dropdown-item" href="candlestick.html" style="color:goldenrod">Candle Graph</a>
+              <a class="dropdown-item" href="predict.html" style="color:goldenrod">Prediction Calculator</a>
+              <!-- <div class="dropdown-divider"></div>-->
+              
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="team.html" style="color:goldenrod">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="data.html" style="color:goldenrod">Data</a>
+          </li>
+        </ul>
           <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
@@ -71,17 +72,27 @@
      <br>
      <br>
       <h1 style="color:tomato;"> Dataframe Work </h1>
-      <p style="color:white;">Below you will find excerpts from our codes. After pulling data from API, we did data cleaning and data manipulation to prepare dataframes for Machine Learning.</p>
+      <p style="color:white;">Below you will find excerpts from our codes. After pulling data from API, we did data cleaning and data manipulation to prepare dataframes for Machine Learning. This included creating a loop of Quarterly Reports' published statistics. Using these ratios we created a Buy/Sell/Hold determination based on 3% growth or shrink and inserted it into the dataframe.</p>
       <figure class="figure">
-        <img src="image/ERD.png" style= "width: 50%; height: 50%" class="resize" alt="ERD">
+        <img src="image/DecisionLoop.PNG" alt="ERD">
         <figcaption class="figure-caption"></figcaption>
     </figure>
 
      <br>
      <br> 
     <h1 style="color:tomato;"> Machine Learning </h1>
-      <p></p>
+      <p>We created a Machine Learning Program to learn from the afmorementioned data in order to predict out to the next quarter. We ran accuracy tests and while the accuracy was low, the machine was learning as we tightened our margins and calrified more data inputs. Below you will find our Accuracy Tests.  </p>
       <figure class="figure">
-        <img src="image/ERD.png" style= "width: 50%; height: 50%" class="resize" alt="ERD">
+        <img src="image/ModelStatistics.PNG" alt="ERD">
+        <img src="image/PipelineAccuracy.PNG" alt="ERD">
+        <figcaption class="figure-caption"></figcaption>
+    </figure>
+    <br>
+    <br>
+    <h1 style="color:tomato;"> Confusion Matrix and Final Analysis</h1>
+      <p>We created a Confusioin Matrix to show our Final Determinations and evaluate the outcomes.  </p>
+      <figure class="figure">
+        <img src="image/ConfusionMatrix.PNG" alt="ERD">
+        
         <figcaption class="figure-caption"></figcaption>
     </figure>
