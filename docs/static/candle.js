@@ -1,7 +1,7 @@
 anychart.onDocumentReady(function () {
 
   // load data
-  anychart.data.loadCsvFile("candle.csv", function (data) {
+  anychart.data.loadCsvFile("../../Data/candle.csv", function (data) {
 
     // create a data table
     var dataTable = anychart.data.table(0, 'yyyy-mm-dd');
