@@ -4,4 +4,4 @@ A study exploring the extent to which basic machine learning classifier algorith
 to view Webpages:
 1) In the Docs Folder you will find a home.html
 2) Run the home.html on a local server or on the Live Server Extension. 
-3) Navigate the pages to your heart's content.
+3) Navigate the pages as you please.
